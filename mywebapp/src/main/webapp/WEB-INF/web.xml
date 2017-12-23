@@ -5,11 +5,11 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
-  	<servlet-name>locationDetails</servlet-name>
-  	<servlet-class>com.dyasha.mywebapp.servlets.FindLocationDetailsServlet</servlet-class>
+  	<servlet-name>myServlet</servlet-name>
+  	<servlet-class>org.jspiders.mywebapp.servlet.MyRESTClientServelt</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>locationDetails</servlet-name>
-  	<url-pattern>/locationDetails</url-pattern>
+  	<servlet-name>myServlet</servlet-name>
+  	<url-pattern>/myRestClient</url-pattern>
   </servlet-mapping>
 </web-app>
