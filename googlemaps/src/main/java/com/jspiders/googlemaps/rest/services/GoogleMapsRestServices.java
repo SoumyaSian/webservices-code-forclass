@@ -6,10 +6,8 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
-import com.jspiders.googlemaps.dao.compdata.Company;
-import com.jspiders.googlemaps.dao.compdata.GenerateData;
-import com.jspiders.googlemaps.dao.locdata.LocationDAO;
-import com.jspiders.googlemaps.dao.locdata.LocationDataDTO;
+import com.jspiders.googlemaps.dao.LocationDAO;
+import com.jspiders.googlemaps.dao.LocationDataDTO;
 
 @Path("/geocode")
 public class GoogleMapsRestServices {
@@ -46,13 +44,5 @@ public class GoogleMapsRestServices {
 		
 	}//End of XML Service
 	
-	@GET
-	@Path("/empdata")
-	@Produces(MediaType.APPLICATION_XML)
-	public Company getEmpData(){
-		
-		return GenerateData.gererate();
-		
-	}//End of XML Service
 	
 }//End of Class

@@ -4,12 +4,15 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  
   <servlet>
-  	<servlet-name>locationDetails</servlet-name>
-  	<servlet-class>com.dyasha.mywebapp.servlets.FindLocationDetailsServlet</servlet-class>
+  	<servlet-name>locationSearch</servlet-name>
+  	<servlet-class>com.jspiders.mywebapp.servlets.LocationSearchServlet</servlet-class>
   </servlet>
+  
   <servlet-mapping>
-  	<servlet-name>locationDetails</servlet-name>
-  	<url-pattern>/locationDetails</url-pattern>
+  	<servlet-name>locationSearch</servlet-name>
+  	<url-pattern>/locationSearch</url-pattern>
   </servlet-mapping>
+  
 </web-app>
